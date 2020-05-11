@@ -179,6 +179,23 @@ header nav #navDiv a {
   padding: 2%;
   margin: 2%;
 }
+header .intro {
+  text-align: center;
+  color: goldenrod;
+  font-size: 1rem;
+  padding: 5%;
+}
+header .intro button {
+  border: 2px solid rebeccapurple;
+  border-radius: 3rem;
+  padding: 1%;
+  margin: 2%;
+  color: wheat;
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: maroon;
+  font-family: 'Dancing Script', cursive;
+}
 #skillsSection {
   display: flex;
   flex-direction: column;
