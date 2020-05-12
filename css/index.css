@@ -273,10 +273,16 @@ header .intro button {
   justify-content: space-around;
 }
 .contactMe {
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .contactMe {
+    background-color: skyblue;
+  }
 }
 .contactMe h3 {
   font-family: 'Dancing Script', cursive;
@@ -290,6 +296,10 @@ header .intro button {
     color: brown;
   }
 }
+.contactMe #contactForm {
+  display: flex;
+  justify-content: center;
+}
 .contactMe button {
   border: 2px solid rebeccapurple;
   border-radius: 3rem;
@@ -299,15 +309,13 @@ header .intro button {
   font-size: 0.75rem;
   background-color: maroon;
   font-family: 'Dancing Script', cursive;
-  width: 15%;
+  width: 25%;
   text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 @media (max-width: 500px) {
   .contactMe button {
     align-items: center;
-    width: 25%;
+    width: 100%;
   }
 }
 footer {

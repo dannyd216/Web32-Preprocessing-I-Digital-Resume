@@ -255,6 +255,8 @@ header {
 
 		}
 
+		// ENDS NAV W/ QUERY
+
 
 
 		.myLogo {
@@ -278,6 +280,10 @@ header {
 
 		}
 
+		// ENDS MYLOGO DIV
+
+
+
 		// HEADER LOGO DIV
 
 		#navDiv {
@@ -291,6 +297,8 @@ header {
 			}
 
 		}
+
+		// ENDS NAVDIV W/ QUERY
 
 		// ENDS NAV DIV
 
@@ -317,14 +325,13 @@ header {
 
 		}
 
-		// ENDS NAV A
-
-		// NAV MEDIA QUERY
+		// ENDS NAV A LINKS W/ QUERY
 
 
 	}
 
-	// ENDS NAV
+	// END NAV IN HEADER
+
 
 	.intro {
 
@@ -350,10 +357,14 @@ header {
 		}
 	}
 
+	// END INTRO W/ QUERY 
+
 	.intro button {
 
 		.borderBtn();
 	}
+
+	// END INTRO BUTTON
 
 
 
@@ -393,6 +404,8 @@ header {
 			}
 		}
 
+		// END SKILLSSECTION H2 W/ QUERY
+
 		#skillsList {
 			display: flex;
 
@@ -412,11 +425,17 @@ header {
 
 		}
 
-		// END SKILLSLIST
+		// END SKILLSLIST W/ QUERY
+
 
 	}
 
-	// END SKILLSSECTION
+	// END SKILLS SECTION
+
+
+
+
+
 
 	// PROJECT IMGS DIV
 
@@ -426,6 +445,8 @@ header {
 
 		justify-content: space-evenly;
 	}
+
+	// END PROJIMG DIV
 
 	.projImg img {
 
@@ -446,9 +467,17 @@ header {
 
 
 		}
+
+		// END IMG LINKS
+
 	}
 
+	// END PROJIMG IMG
+
+
 }
+
+// END SKILLSPROJECTS SECTION
 
 // END SKILLSPROJECTS
 
@@ -458,6 +487,8 @@ header {
 
 .contactMe {
 
+	border: 1px solid black;
+
 	display: flex;
 
 	flex-direction: column;
@@ -465,6 +496,11 @@ header {
 	justify-content: center;
 
 	align-items: center;
+
+	@media(max-width: 500px) {
+
+		background-color: skyblue;
+	}
 
 	h3 {
 		font-family: @fontDance;
@@ -483,32 +519,36 @@ header {
 		}
 	}
 
+	// END CONTACTME H3 W/ QUERY
+
+	#contactForm {
+
+		display: flex;
+
+		justify-content: center;
+	}
+
 
 	button {
 
 		.borderBtn();
 
-		width: 15%;
+		width: 25%;
 
 		text-align: center;
-
-		justify-content: center;
-
-		align-items: center;
-
 
 
 		@media(max-width: 500px) {
 
 			align-items: center;
 
-			width: 25%;
+			width: 100%;
 		}
 
 
 	}
 
-	// END BUTTON
+	// END CONTACTME BUTTON
 
 
 }
