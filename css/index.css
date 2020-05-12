@@ -1,1 +1,347 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: khaki;
+  font-size: 62.5%;
+}
+html {
+  font-size: 2rem;
+  font-family: 'Anton', sans-serif;
+}
+header {
+  height: 90vh;
+  background-color: darksalmon;
+  background-image: url(../images/skyMountainsClouds.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-postion: center;
+  background-attachment: fixed;
+}
+@media (max-width: 500px) {
+  header {
+    height: 100%;
+  }
+}
+header nav {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
+}
+header nav .myLogo img {
+  padding: 5%;
+  max-width: 100%;
+  border-radius: 3rem;
+  width: 100px;
+  height: 100px;
+}
+header nav #navDiv {
+  color: tan;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2%;
+  padding: 0;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  header nav #navDiv {
+    flex-direction: column;
+  }
+}
+header nav #navDiv a {
+  color: tan;
+  font-size: 1rem;
+  padding: 2%;
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  header nav #navDiv a {
+    display: flex;
+    flex-direction: column;
+    color: gold;
+    text-decoration: none;
+  }
+}
+header .intro {
+  text-align: center;
+  color: goldenrod;
+  font-size: 1rem;
+  padding: 5%;
+}
+@media (max-width: 500px) {
+  header .intro {
+    text-align: center;
+    color: grey;
+    padding: 3%;
+    margin: 0 auto;
+  }
+}
+header .intro button {
+  border: 2px solid rebeccapurple;
+  border-radius: 3rem;
+  padding: 1%;
+  margin: 2%;
+  color: wheat;
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: maroon;
+  font-family: 'Dancing Script', cursive;
+}
+#skillsProjects #skillsSection {
+  display: flex;
+  flex-direction: column;
+}
+#skillsProjects #skillsSection h2 {
+  text-align: center;
+  color: darkorange;
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bolder;
+}
+@media (max-width: 500px) {
+  #skillsProjects #skillsSection h2 {
+    color: black;
+  }
+}
+#skillsProjects #skillsSection #skillsList {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.6rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  #skillsProjects #skillsSection #skillsList {
+    justify-content: space-between;
+    color: sandybrown;
+  }
+}
+#skillsProjects .projImg {
+  display: flex;
+  justify-content: space-evenly;
+}
+#skillsProjects .projImg img {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  padding: 3%;
+  margin: 2%;
+}
+#skillsProjects .projImg img img a {
+  justify-content: space-around;
+}
+.contactMe {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .contactMe {
+    background-color: skyblue;
+  }
+}
+.contactMe h3 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: bolder;
+  color: sienna;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .contactMe h3 {
+    font-size: 1.5rem;
+    color: brown;
+  }
+}
+.contactMe #contactForm {
+  display: flex;
+  justify-content: center;
+}
+.contactMe button {
+  border: 2px solid rebeccapurple;
+  border-radius: 3rem;
+  padding: 1%;
+  margin: 2%;
+  color: wheat;
+  font-size: 0.75rem;
+  background-color: maroon;
+  font-family: 'Dancing Script', cursive;
+  width: 25%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .contactMe button {
+    align-items: center;
+    width: 100%;
+  }
+}
+footer {
+  padding: 2%;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+footer #navDiv nav a {
+  color: tan;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2%;
+  padding: 0;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  footer #navDiv nav a {
+    justify-content: space-evenly;
+    color: white;
+    text-decoration: none;
+  }
+}
+@media (max-width: 500px) {
+  footer p {
+    color: skyblue;
+  }
+}
