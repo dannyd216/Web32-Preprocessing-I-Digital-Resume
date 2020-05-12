@@ -178,6 +178,7 @@ header nav .myLogo img {
   height: 100px;
 }
 header nav #navDiv {
+  color: tan;
   width: 70%;
   justify-content: space-evenly;
   align-items: center;
@@ -229,11 +230,11 @@ header .intro button {
   background-color: maroon;
   font-family: 'Dancing Script', cursive;
 }
-#skillsSection {
+#skillsProjects #skillsSection {
   display: flex;
   flex-direction: column;
 }
-#skillsSection h2 {
+#skillsProjects #skillsSection h2 {
   text-align: center;
   color: darkorange;
   font-size: 2rem;
@@ -241,21 +242,35 @@ header .intro button {
   font-weight: bolder;
 }
 @media (max-width: 500px) {
-  #skillsSection h2 {
+  #skillsProjects #skillsSection h2 {
     color: black;
   }
 }
-#skillsSection #skillsList {
+#skillsProjects #skillsSection #skillsList {
   display: flex;
   justify-content: space-evenly;
   font-size: 1.6rem;
   text-align: center;
 }
 @media (max-width: 500px) {
-  #skillsSection #skillsList {
+  #skillsProjects #skillsSection #skillsList {
     justify-content: space-between;
     color: sandybrown;
   }
+}
+#skillsProjects .projImg {
+  display: flex;
+  justify-content: space-evenly;
+}
+#skillsProjects .projImg img {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  padding: 3%;
+  margin: 2%;
+}
+#skillsProjects .projImg img img a {
+  justify-content: space-around;
 }
 .contactMe {
   display: flex;
@@ -282,10 +297,12 @@ header .intro button {
   margin: 2%;
   color: wheat;
   font-size: 0.75rem;
-  text-align: center;
   background-color: maroon;
   font-family: 'Dancing Script', cursive;
   width: 15%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .contactMe button {
@@ -297,6 +314,15 @@ footer {
   padding: 2%;
   margin: 0;
   width: 100%;
+  text-align: center;
+}
+footer #navDiv nav a {
+  color: tan;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2%;
+  padding: 0;
   text-align: center;
 }
 @media (max-width: 500px) {

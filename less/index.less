@@ -171,9 +171,23 @@ html {
 
 // MIXINS
 
-.outline() {
+.navStyle() {
 
-	border: 2px solid fuchsia;
+	color: tan;
+
+	width: 70%;
+
+	justify-content: space-evenly;
+
+	align-items: center;
+
+	margin: 2%;
+
+	padding: 0;
+
+	text-align: center;
+
+
 }
 
 .borderBtn() {
@@ -268,17 +282,8 @@ header {
 
 		#navDiv {
 
-			width: 70%;
+			.navStyle();
 
-			justify-content: space-evenly;
-
-			align-items: center;
-
-			margin: 2%;
-
-			padding: 0;
-
-			text-align: center;
 
 			@media(max-width: 500px) {
 
@@ -359,60 +364,93 @@ header {
 
 // BODY
 
+#skillsProjects {
+
+	// SKILLS SECTION
+
+	#skillsSection {
+
+		display: flex;
+
+		flex-direction: column;
+
+		h2 {
+			text-align: center;
+
+			color: darkorange;
+
+			font-size: 2rem;
+
+			font-family: @fontDance;
+
+			font-weight: bolder;
 
 
-// SKILLS SECTION
+			@media(max-width: 500px) {
 
-#skillsSection {
+				color: black;
 
-	display: flex;
+			}
+		}
 
-	flex-direction: column;
+		#skillsList {
+			display: flex;
 
-	h2 {
-		text-align: center;
+			justify-content: space-evenly;
 
-		color: darkorange;
+			font-size: 1.6rem;
 
-		font-size: 2rem;
+			text-align: center;
 
-		font-family: @fontDance;
+			@media(max-width: 500px) {
 
-		font-weight: bolder;
+				justify-content: space-between;
 
+				color: sandybrown;
 
-		@media(max-width: 500px) {
-
-			color: black;
+			}
 
 		}
+
+		// END SKILLSLIST
+
 	}
 
-	#skillsList {
+	// END SKILLSSECTION
+
+	// PROJECT IMGS DIV
+
+	.projImg {
+
 		display: flex;
 
 		justify-content: space-evenly;
-
-		font-size: 1.6rem;
-
-		text-align: center;
-
-		@media(max-width: 500px) {
-
-			justify-content: space-between;
-
-			color: sandybrown;
-
-		}
-
 	}
 
-	// END SKILLSLIST
+	.projImg img {
+
+		height: 300px;
+
+		width: 300px;
+
+		display: flex;
+
+		padding: 3%;
+
+		margin: 2%;
+
+		img a {
+
+			justify-content: space-around;
+
+
+
+		}
+	}
 
 }
 
-// END SKILLSSECTION
-
+// END SKILLSPROJECTS
 
 
 
@@ -452,6 +490,14 @@ header {
 
 		width: 15%;
 
+		text-align: center;
+
+		justify-content: center;
+
+		align-items: center;
+
+
+
 		@media(max-width: 500px) {
 
 			align-items: center;
@@ -482,9 +528,9 @@ footer {
 
 	text-align: center;
 
-
-
 	#navDiv nav a {
+
+		.navStyle();
 
 		@media(max-width: 500px) {
 
@@ -498,15 +544,15 @@ footer {
 	}
 
 	// END NAV LINKS
-@media(max-width: 500px) {
+	@media(max-width: 500px) {
 
-	p {
+		p {
 
-		color: skyblue;
+			color: skyblue;
+		}
+
 	}
-	
-}
-	
+
 
 	// END LINKS	
 

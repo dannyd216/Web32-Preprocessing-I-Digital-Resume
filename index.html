@@ -62,12 +62,15 @@
     </header>
 
     <!-- SKILLS SECTION HTML, CSS, JS -->
-    <section>
+    <section id="skillsProjects">
+
       <div id="skillsSection">
         <h2>Skills</h2>
+
         <br>
 
         <div>
+
           <ul id="skillsList">
             <div id="htmlLI">
               <i class="fab fa-html5"></i>
@@ -89,14 +92,17 @@
 
       </div>
 
+      <br>
 
       <!-- IMAGES OF PAST PROJECTS W/ HOVER EFFECT AND LINKING TO THE FULL PROJECTS PAGE -->
       <div class="projImg">
-        <img />
-        <img />
-        <img />
+        <a href="./images/PERFECT MOUNTAINS FOOTHILS.jpg"><img src="./images/PERFECT MOUNTAINS FOOTHILS.jpg" /></a>
+        <a href="./images/PERFECT MOUNTAINS FOOTHILS.jpg"><img src="./images/PERFECT MOUNTAINS FOOTHILS.jpg" /></a>
+        <a href="./images/PERFECT MOUNTAINS FOOTHILS.jpg"><img src="./images/PERFECT MOUNTAINS FOOTHILS.jpg" /></a>
 
       </div>
+
+      <br>
 
     </section>
 
@@ -104,7 +110,23 @@
     <section class="contactMe">
 
       <h3>Contact Me</h3>
-      <button>Contact Me</button>
+
+      <div>
+        <form method="POST" action="https://formspree.io/YOUREMAILHERE">
+          <label for="name">Your Name</label>
+          <input type="name" name="name">
+          <label for="email">Your Email</label>
+          <input type="email" name="email">
+          <label for="message">Your Message</label>
+          <textarea name="message"></textarea>
+
+        </form>
+
+        <button type="submit">Send</button>
+
+      </div>
+
+
 
     </section>
 
